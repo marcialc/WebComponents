@@ -1,0 +1,10 @@
+.my-tab {
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.my-tab.active{
+    color: #1890ff;
+    font-weight: 500;
+    border-bottom: 2px solid #1890ff;
+}

@@ -1,0 +1,34 @@
+p {
+    line-height: 1.5;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+p.info {
+    background: #e6f7ff;
+    border: 1px solid #91d5ff;
+}
+
+p.success {
+    background: #f6ffed;
+    border: 1px solid #84f8a1;
+}
+
+p.error {
+    background: #fff1f0;
+    border: 1px solid #f88d9f;
+}
+
+p.acknowledged {
+    display: none;
+}
+
+span {
+    margin-left: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: sans-serif;
+    opacity: 0.5;
+}

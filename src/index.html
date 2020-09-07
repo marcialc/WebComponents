@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Marcial Componentsoka</title>
+
+    <script type="module" src="/build/first-component.esm.js"></script>
+    <script nomodule src="/build/first-component.js"></script>
+  </head>
+  <body>
+   
+    <!-- <my-alert kind="info" text="This is an important alert"></my-alert>
+    <my-alert kind="success" text="Well done"></my-alert>
+    <my-alert kind="error" text="Something went wrong"></my-alert> -->
+
+    <my-tabs active-tab="">
+      <my-tab name="Tab1">Home</my-tab>
+      <my-tab name="Tab2"><b>Tab Two</b></my-tab>
+      <my-tab name="Tab3">Tab Three</my-tab>
+      <my-tab name="Tab4"><b>Tab Four</b></my-tab>
+      <my-tab name="Tab5">Tab Five</my-tab>
+      <my-tab name="Tab6"><b>Tab Six</b></my-tab>
+    </my-tabs>
+
+    <script>
+
+      // My-Alert console log the text and the date when the span was clicked
+      // function handleAcknowledge(e) {
+      //   console.log(e.target.text, e.detail.when)
+      // }
+      // document.addEventListener("acknowledge", handleAcknowledge)
+
+      function handleTabActivate(e) {
+        console.log(e.detail.name)
+      }
+      document.addEventListener("tabActivate", handleTabActivate)
+
+    </script>
+
+  </body>
+</html>
